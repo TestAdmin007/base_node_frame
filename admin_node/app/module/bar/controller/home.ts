@@ -16,4 +16,13 @@ export class HomeController {
     this.logger.info('hello egg logger');
     return 'hello egg';
   }
+
+  @HTTPMethod({
+    method: HTTPMethodEnum.POST,
+    path: '/',
+  })
+  async test() {
+    this.logger.info('我是测试POST请求');
+    return 'sssss';
+  }
 }
