@@ -1,4 +1,9 @@
 {
   "root": true,
-  "extends": "eslint-config-egg/typescript"
+  "extends": "eslint-config-egg/typescript",
+  "rules": {
+    "indent": "off",
+    "@typescript-eslint/indent": ["error", 4],
+    "@typescript-eslint/no-var-requires": 0
+  }
 }
