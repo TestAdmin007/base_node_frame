@@ -37,6 +37,10 @@ const plugin: EggPlugin = {
         enable: true,
         package: 'egg-cors',
     },
+    routerPlus: {
+        enable: true,
+        package: 'egg-router-plus',
+    },
 };
 
 
@@ -47,7 +51,7 @@ exports.sequelize = {
     enable: true,
     package: 'egg-sequelize',
 };
-exports.routerPlus = {
-    enable: true,
-    package: 'egg-router-plus',
-};
+// exports.routerPlus = {
+//     enable: true,
+//     package: 'egg-router-plus',
+// };

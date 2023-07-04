@@ -40,4 +40,6 @@ class BaseController extends Controller {
         return this.#response(undefined, message, code, httpCode);
     }
 }
-module.exports = BaseController;
+// module.exports = BaseController;
+
+export default BaseController;

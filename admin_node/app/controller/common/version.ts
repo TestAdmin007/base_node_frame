@@ -1,9 +1,9 @@
-const BaseControllerApi = require('../BaseController');
+import BaseController from '../BaseController';
 
-class VersionController extends BaseControllerApi {
+class VersionController extends BaseController {
     async version() {
         this.success({ version: '1.0.0' });
     }
 }
 
-module.exports = VersionController;
+export default VersionController;

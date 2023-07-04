@@ -1,10 +1,6 @@
-
+import BaseController from '../BaseController';
 
 class ApiController extends BaseController {
-
-    constructor() {
-        super();
-    }
     version() {
         return this.success({
             version: '1.0.0',
@@ -12,4 +8,4 @@ class ApiController extends BaseController {
     }
 }
 
-module.exports = ApiController;
+export default ApiController;
