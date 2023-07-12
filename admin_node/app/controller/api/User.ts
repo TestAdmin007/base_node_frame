@@ -19,19 +19,18 @@ class UserController extends ApiController {
         const err = this.app.validator.validate(createRule, this.ctx.request.body);
 
         if (err) {
-            console.log(err);
             return this.fail('不知道怎么返回');
         }
-        console.log(this);
-        // const params = this.ctx.request.body;
-        // const user = await this.app.model.User.create({
-        //     username: params.username,
-        //     name: '',
-        //     password: '123',
-        //     salt: '123',
-        // });
 
-        return this.success([]);
+        const params = this.ctx.request.body;
+        const user = await this.ctx.model.User.create({
+            username: params.username,
+            name: '',
+            password: '123',
+            salt: '123',
+        });
+
+        return this.success(user);
     }
 }
 

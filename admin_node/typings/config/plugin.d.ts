@@ -24,6 +24,8 @@ import '@eggjs/tegg-aop-plugin';
 import 'egg-tracer';
 import 'egg-jwt';
 import 'egg-cors';
+import 'egg-router-plus';
+import 'egg-validate';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -48,5 +50,7 @@ declare module 'egg' {
     tracer?: EggPluginItem;
     jwt?: EggPluginItem;
     cors?: EggPluginItem;
+    routerPlus?: EggPluginItem;
+    validate?: EggPluginItem;
   }
 }

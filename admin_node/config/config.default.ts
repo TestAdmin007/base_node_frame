@@ -32,6 +32,22 @@ export default (appInfo: EggAppInfo) => {
         origin: '*',
         allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
     };
+    config.sequelize = {
+        dialect: 'mysql',
+        host: process.env.DATABASE_HOST || '127.0.0.1',
+        port: process.env.DATABASE_PORT || 3306,
+        database: process.env.DATABASE_DATABASE || 'egg',
+        username: process.env.DATABASE_USERNAME || 'egg',
+        password: process.env.DATABASE_PWD || '1995',
+        underscored: true,
+        timezone: process.env.TZ || '+UTC',
+        pool: {
+            max: 5,
+            min: 0,
+            acquire: 30000,
+            idle: 10000,
+        },
+    };
     // the return config will combines to EggAppConfig
     return {
         ...config,
@@ -42,11 +58,11 @@ export default (appInfo: EggAppInfo) => {
 // 数据库链接
 exports.sequelize = {
     dialect: 'mysql',
-    host: process.env.DATABASE_HOST || '192.168.2.254',
+    host: process.env.DATABASE_HOST || '127.0.0.1',
     port: process.env.DATABASE_PORT || 3306,
-    database: process.env.DATABASE_DATABASE || 'test_egg',
-    username: process.env.DATABASE_USERNAME || 'test_egg',
-    password: process.env.DATABASE_PWD || '123456',
+    database: process.env.DATABASE_DATABASE || 'egg',
+    username: process.env.DATABASE_USERNAME || 'egg',
+    password: process.env.DATABASE_PWD || '1995',
     underscored: true,
     timezone: process.env.TZ || '+UTC',
     pool: {
