@@ -1,0 +1,12 @@
+### 获取版本
+GET http://127.0.0.1:7001/api/version
+Content-Type: application/json
+
+### 注册用户
+POST http://127.0.0.1:7001/api/user/register
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "e10adc3949ba59abbe56e057f20f883e"
+}

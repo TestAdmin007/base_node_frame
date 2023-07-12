@@ -2544,6 +2544,13 @@ egg-utils@^2.4.1:
     mkdirp "^0.5.1"
     utility "^1.15.0"
 
+egg-validate@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmmirror.com/egg-validate/-/egg-validate-2.0.2.tgz#c236c730a3730fe4e0655e1a2799398178ab3dd3"
+  integrity sha512-pUTfMTHQSpzDKAWkH19ZpyQBK22UToAwNWIgW1eXCAMpz+qvULuI5ey7dgqGQ/ZNwV2w/Stg96BrzW5uigCuVg==
+  dependencies:
+    parameter "^3.0.0"
+
 egg-view@^2.1.3:
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/egg-view/-/egg-view-2.1.4.tgz#c583b62f6d320eee9470dcbd1de42a6ca1d425be"
@@ -5117,6 +5124,11 @@ param-case@^2.1.0:
   dependencies:
     no-case "^2.2.0"
 
+parameter@^3.0.0:
+  version "3.7.0"
+  resolved "https://registry.npmmirror.com/parameter/-/parameter-3.7.0.tgz#614518b2242ea79cf5ffa24d1151dfd36576630d"
+  integrity sha512-CRSlKBPn5pI1HQpdhyjVojTq9OyZFXcejkqt6vhkjmAwvZ4w0nK6Od/vNyniWY8wC3FwIPG+DUc59vG3FmkINg==
+
 parent-module@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/parent-module/-/parent-module-1.0.1.tgz#691d2709e78c79fae3a156622452d00762caaaa2"
@@ -5631,7 +5643,7 @@ seq-queue@^0.0.5:
 
 sequelize-cli@^6.6.1:
   version "6.6.1"
-  resolved "https://registry.yarnpkg.com/sequelize-cli/-/sequelize-cli-6.6.1.tgz#ab86fc8de79f56bf1d1c4e3bbb1104aee4a5eaf4"
+  resolved "https://registry.npmmirror.com/sequelize-cli/-/sequelize-cli-6.6.1.tgz#ab86fc8de79f56bf1d1c4e3bbb1104aee4a5eaf4"
   integrity sha512-C3qRpy1twBsFa855qOQFSYWer8ngiaZP05/OAsT1QCUwtc6UxVNNiQ0CGUt98T9T1gi5D3TGWL6le8HWUKELyw==
   dependencies:
     cli-color "^2.0.3"

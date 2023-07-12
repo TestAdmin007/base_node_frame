@@ -41,16 +41,24 @@ const plugin: EggPlugin = {
         enable: true,
         package: 'egg-router-plus',
     },
+    validate: {
+        enable: true,
+        package: 'egg-validate',
+    },
+    sequelize: {
+        enable: true,
+        package: 'egg-sequelize',
+    },
 };
 
 
 export default plugin;
 
 
-exports.sequelize = {
-    enable: true,
-    package: 'egg-sequelize',
-};
+// exports.sequelize = {
+//     enable: true,
+//     package: 'egg-sequelize',
+// };
 // exports.routerPlus = {
 //     enable: true,
 //     package: 'egg-router-plus',

@@ -1,5 +1,5 @@
 import { EggAppConfig, EggAppInfo, PowerPartial } from 'egg';
-import * as process from 'process';
+// import * as process from 'process';
 require('dotenv').config(); // 加载dotenv配置文件用于支持 env
 
 
@@ -42,10 +42,10 @@ export default (appInfo: EggAppInfo) => {
 // 数据库链接
 exports.sequelize = {
     dialect: 'mysql',
-    host: process.env.DATABASE_HOST || '127.0.0.1',
+    host: process.env.DATABASE_HOST || '192.168.2.254',
     port: process.env.DATABASE_PORT || 3306,
-    database: process.env.DATABASE_DATABASE || 'test',
-    username: process.env.DATABASE_USERNAME || 'root',
+    database: process.env.DATABASE_DATABASE || 'test_egg',
+    username: process.env.DATABASE_USERNAME || 'test_egg',
     password: process.env.DATABASE_PWD || '123456',
     underscored: true,
     timezone: process.env.TZ || '+UTC',
